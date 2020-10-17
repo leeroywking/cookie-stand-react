@@ -99,7 +99,7 @@ class App extends Component {
         <article>
           <SalesData data={this.state.sales} username={this.state.username}/>
         </article>
-        <img src={Chinook} />
+        <img src={Chinook} alt="its a picture of a fish"/>
       </div>
     );
   }
