@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import LoginForm from './components/LoginForm';
 import './App.css';
 import SalesData from "./components/SalesData.js"
-
+import Chinook from './img/chinook.jpg';
 const current_user_endpoint = `http://localhost:8000/core/current_user/`
 const token_auth_endpoint = `https://lrk-ns-salmon-cookies.herokuapp.com/api/token`
 const sales_endpoint = 'https://lrk-ns-salmon-cookies.herokuapp.com/api/v1/sales/'
@@ -99,6 +99,7 @@ class App extends Component {
         <article>
           <SalesData data={this.state.sales} username={this.state.username}/>
         </article>
+        <img src={Chinook} />
       </div>
     );
   }
