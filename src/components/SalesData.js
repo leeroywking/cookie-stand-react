@@ -11,10 +11,10 @@ const managerMap = {
 
 export default (props) => {
     const filteredData = props.data.filter(location => {
-        if(props.username == "admin"){
+        if(props.username === "admin"){
             return true
         }
-        else if (props.username == managerMap[location.manager]){
+        else if (props.username === managerMap[location.manager]){
             return true
         }
         else {
